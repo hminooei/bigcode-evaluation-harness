@@ -31,7 +31,7 @@ setup(
     description="A framework for the evaluation of autoregressive code generation language models.",
     long_description=readme,
     license="Apache 2.0",
-    packages=["lm_eval"],
+    packages=["lm_eval", "lem_eval.tasks"],
     install_requires=requirements,
     extras_require={"ds1000": ds1000_requirements},
 )
