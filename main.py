@@ -77,16 +77,19 @@ def parse_args():
     )
     parser.add_argument(
         "--postprocess",
+        type=bool,
         action="store_false",
         help="Postprocess model outputs before execution, always on except during generation tests",
     )
     parser.add_argument(
         "--allow_code_execution",
+        type=bool,
         action="store_true",
         help="Allow code evaluation to execute external/untrusted Python code on your machine",
     )
     parser.add_argument(
         "--generation_only",
+        type=bool,
         action="store_true",
         help="Do code generation but no evaluation",
     )
