@@ -50,7 +50,7 @@ def parse_args():
     parser.add_argument(
         "--trust_remote_code",
         type=bool,
-        default=True",
+        default=True,
         help="Use a model with custom code, this requires executing code by the author of the model.",
     )
     parser.add_argument(
