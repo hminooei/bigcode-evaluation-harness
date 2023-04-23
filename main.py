@@ -43,11 +43,13 @@ def parse_args():
     )
     parser.add_argument(
         "--use_auth_token",
+        type=bool,
         action="store_true",
         help="Use the token generated when running `huggingface-cli login` (necessary for private model).",
     )
     parser.add_argument(
         "--trust_remote_code",
+        type=bool,
         action="store_true",
         help="Use a model with custom code, this requires executing code by the author of the model.",
     )
@@ -107,11 +109,13 @@ def parse_args():
     )
     parser.add_argument(
         "--save_generations",
+        type=bool,
         action="store_true",
         help="Whether to save code generations",
     )
     parser.add_argument(
         "--save_references",
+        type=bool,
         action="store_true",
         help="Whether to save reference solutions/tests",
     )
