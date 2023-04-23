@@ -31,7 +31,7 @@ def get_args():
     parser.add_argument("--num_warmup_steps", type=int, default=100)
     parser.add_argument("--weight_decay", type=float, default=0.05)
 
-    parser.add_argument("--fp16", default=False, action="store_true")
+    parser.add_argument("--fp16", default=False, type=bool)
     parser.add_argument("--seed", type=int, default=0)
     parser.add_argument("--output_dir", type=str, default="./checkpoints")
     parser.add_argument("--log_freq", default=1, type=int)
